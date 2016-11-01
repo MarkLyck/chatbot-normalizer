@@ -15,7 +15,6 @@ function normalize(message) {
     var cleanMessage = message.trim()
     cleanMessage = cleanMessage.replace('.', ' .')
     cleanMessage = ' ' + cleanMessage + ' '
-    console.log(cleanMessage)
     cleanFromFile(tasks[0], cleanMessage)
     .then(output => cleanFromFile(tasks[1], output))
     .then(output => cleanFromFile(tasks[2], output))
@@ -24,7 +23,6 @@ function normalize(message) {
     .then(output => cleanFromFile(tasks[5], output))
     .then(output => cleanFromFile(tasks[6], output))
     .then((output) => {
-      console.log(output)
       resolve(output)
     })
   })
@@ -36,9 +34,12 @@ function cleanFromFile(path, msg) {
 
     lr.on('line', function (line) {
       var checker = line.split(' ')
-      if (checker.length >= 2 && checker[1] !== '') {
+      if (checker.length >= 3 && checker[1] !== '') {
         if (msg.indexOf(' ' + checker[1].replace('_', ' ') + ' ') > -1) {
-          msg = msg.replace(checker[1], checker[2])
+          if checker[2] {
+            msg = msg.replace(checker[1], checker[2])
+          }
+
         }
       }
 
