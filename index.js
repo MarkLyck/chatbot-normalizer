@@ -22,7 +22,8 @@ function normalize(message) {
     .then(output => cleanFromFile(tasks[4], output))
     .then(output => cleanFromFile(tasks[5], output))
     .then(output => cleanFromFile(tasks[6], output))
-    .then((output) => {
+    .then(output => cleanOutput(output))
+    .then(output => {
       resolve(output)
     })
   })
@@ -34,12 +35,13 @@ function cleanFromFile(path, msg) {
 
     lr.on('line', function (line) {
       var checker = line.split(' ')
-      if (checker.length >= 3 && checker[1] !== '') {
-        if (msg.indexOf(' ' + checker[1].replace('_', ' ') + ' ') > -1) {
-          if checker[2] {
-            msg = msg.replace(checker[1], checker[2])
-          }
 
+      if (checker.length >= 2 && checker[0] !== '') {
+        if (msg.indexOf(' ' + checker[0].replace('_', ' ') + ' ') > -1) {
+          if (checker[1]) {
+            console.log(checker[0], ' ' + checker[1].replace('_', ' ') + ' ')
+            msg = msg.replace(checker[0], checker[1])
+          }
         }
       }
 
@@ -48,6 +50,14 @@ function cleanFromFile(path, msg) {
     lr.on('end', function() {
       resolve(msg)
     })
+
+  })
+}
+
+function cleanOutput(msg) {
+  return new Promise(resolve => {
+    msg = msg.trim()
+    resolve(msg)
   })
 }
 
