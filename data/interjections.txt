@@ -1,4 +1,4 @@
- <not_a_prayer> ~no 
+ <not_a_prayer> ~no
  <top_of_the_morning ~emohello
  <top_of_the_morning_to_you ~emohello
  mm
@@ -15,7 +15,7 @@
  <aargh ~emopain
  <aarrghh ~emopain
  <abso-fucking-lutely ~yes
- <oh?> 
+ <oh?>
  <absolutely ~yes
  <accept> ~yes
  <accepted> ~yes
@@ -767,7 +767,6 @@
  <it_is> ~yes
  okay ~yes
  okey ~yes
- oops ~yes
  right-o ~yes
  see_you_later ~emogoodbye
  <she_does_not> ~no

@@ -263,11 +263,10 @@
  colonisers colonizers
  colonises colonizes
  colonising colonizing
- colour color
- colourant colorant
  colourants colorants
- coloured colored
+ colourant colorant
  coloureds coloreds
+ coloured colored
  #colourful colorful
  colourfully colorfully
  colouring coloring
@@ -277,6 +276,7 @@
  colourizing colorizing
  colourless colorless
  colours colors
+ colour color
  commercialise commercialize
  commercialised commercialized
  commercialises commercializes
@@ -460,7 +460,7 @@
  economised economized
  economises economizes
  economising economizing
- edoema edema 
+ edoema edema
  editorialise editorialize
  editorialised editorialized
  editorialises editorializes
@@ -577,9 +577,9 @@
  fictionalises fictionalizes
  fictionalising fictionalizing
  fillet filet
- filleted fileted 
+ filleted fileted
  filleting fileting
- fillets filets 
+ fillets filets
  finalisation finalization
  finalise finalize
  finalised finalized
@@ -660,7 +660,7 @@
  globalised globalized
  globalises globalizes
  globalising globalizing
- glueing gluing 
+ glueing gluing
  goitre goiter
  goitres goiters
  gonorrhoea gonorrhea
@@ -890,7 +890,7 @@
  localises localizes
  localising localizing
  louvred louvered
- louvres louvers 
+ louvres louvers
  lustre luster
  magnetise magnetize
  magnetised magnetized
@@ -966,7 +966,7 @@
  miniaturised miniaturized
  miniaturises miniaturizes
  miniaturising miniaturizing
- minibuses minibusses 
+ minibuses minibusses
  minimise minimize
  minimised minimized
  minimises minimizes
@@ -1196,9 +1196,9 @@
  practise practice
  practised practiced
  practises practices
- practising practicing 
+ practising practicing
  praesidium presidium
- praesidiums presidiums 
+ praesidiums presidiums
  pressurisation pressurization
  pressurise pressurize
  pressurised pressurized
@@ -1391,7 +1391,7 @@
  sentimentalises sentimentalizes
  sentimentalising sentimentalizing
  sepulchre sepulcher
- sepulchres sepulchers 
+ sepulchres sepulchers
  serialisation serialization
  serialisations serializations
  serialise serialize
@@ -1588,7 +1588,7 @@
  travellers travelers
  #travelling traveling
  travelogue travelog
- travelogues travelogs 
+ travelogues travelogs
  trialled trialed
  trialling trialing
  tricolour tricolor
