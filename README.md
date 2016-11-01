@@ -36,7 +36,7 @@ are we scheduled Thursday for the restaurant
 Installation:
 
 ```
-npm install --save chatbot-normalizer
+$ npm install --save chatbot-normalizer
 ```
 
 Use:
