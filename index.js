@@ -50,4 +50,4 @@ function cleanFromFile(path, msg) {
   })
 }
 
-normalize('I’ll listen to y’all')
+module.exports = normalize
