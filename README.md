@@ -33,6 +33,12 @@ are we sceduled thrsday for teh restraunt
 are we scheduled Thursday for the restaurant
 ```
 
+Installation:
+
+```
+npm install --save chatbot-normalizer
+```
+
 Use:
 
 ```
