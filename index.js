@@ -7,7 +7,8 @@ const tasks = [
   './data/interjections.txt',
   './data/british.txt',
   './data/spellfix.txt',
-  './data/texting.txt'
+  './data/texting.txt',
+  './data/numbers.txt'
 ]
 
 function normalize(message) {
@@ -22,6 +23,7 @@ function normalize(message) {
     .then(output => cleanFromFile(tasks[4], output))
     .then(output => cleanFromFile(tasks[5], output))
     .then(output => cleanFromFile(tasks[6], output))
+    .then(output => cleanFromFile(tasks[7], output))
     .then(output => cleanOutput(output))
     .then(output => {
       resolve(output)
