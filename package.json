@@ -4,7 +4,7 @@
   "description": "String normalizer for chatbots",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "homepage": "https://github.com/MarkLyck/chatbot-normalizer#readme",
   "dependencies": {
     "line-by-line": "^0.1.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
   }
 }

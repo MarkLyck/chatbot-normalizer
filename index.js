@@ -41,7 +41,7 @@ function cleanFromFile(path, msg) {
       if (checker.length >= 2 && checker[0] !== '') {
         if (msg.indexOf(' ' + checker[0].replace('_', ' ') + ' ') > -1) {
           if (checker[1]) {
-            console.log(checker[0], ' ' + checker[1].replace('_', ' ') + ' ')
+            // console.log(checker[0], ' ' + checker[1].replace('_', ' ') + ' ')
             msg = msg.replace(checker[0], checker[1])
           }
         }
