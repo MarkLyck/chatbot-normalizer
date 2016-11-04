@@ -15,7 +15,11 @@ const tasks = [
 function normalize(message) {
   return new Promise((resolve, reject) => {
     var cleanMessage = message.trim()
+    // Burst out . , & ?
     cleanMessage = cleanMessage.replace('.', ' .')
+    cleanMessage = cleanMessage.replace('?', ' ?')
+    cleanMessage = cleanMessage.replace(',', ' ,')
+
     cleanMessage = ' ' + cleanMessage + ' '
     cleanFromFile(tasks[0], cleanMessage)
     .then(output => cleanFromFile(tasks[1], output))
