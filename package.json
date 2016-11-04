@@ -1,6 +1,6 @@
 {
   "name": "chatbot-normalizer",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "String normalizer for chatbots",
   "main": "index.js",
   "scripts": {

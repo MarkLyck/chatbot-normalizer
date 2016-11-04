@@ -1,6 +1,11 @@
 var path = require('path');
 var LineByLineReader = require('line-by-line')
 
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this
+    return target.split(search).join(replacement)
+};
+
 const tasks = [
   path.join(__dirname, './data/systemessentials.txt'),
   path.join(__dirname, './data/substitutes.txt'),
@@ -16,9 +21,14 @@ function normalize(message) {
   return new Promise((resolve, reject) => {
     var cleanMessage = message.trim()
     // Burst out . , & ?
-    cleanMessage = cleanMessage.replace('.', ' .')
-    cleanMessage = cleanMessage.replace('?', ' ?')
-    cleanMessage = cleanMessage.replace(',', ' ,')
+    cleanMessage = cleanMessage.replaceAll('.', ' .')
+    cleanMessage = cleanMessage.replaceAll('?', ' ?')
+    cleanMessage = cleanMessage.replaceAll(',', ' ,')
+    // Burst out operators
+    cleanMessage = cleanMessage.replaceAll('+', ' + ')
+    cleanMessage = cleanMessage.replaceAll('-', ' - ')
+    cleanMessage = cleanMessage.replaceAll('*', ' * ')
+    cleanMessage = cleanMessage.replaceAll('/', ' / ')
 
     cleanMessage = ' ' + cleanMessage + ' '
     cleanFromFile(tasks[0], cleanMessage)
@@ -64,6 +74,7 @@ function cleanFromFile(path, msg) {
 function cleanOutput(msg) {
   return new Promise(resolve => {
     msg = msg.trim()
+    msg = msg.replaceAll('  ', ' ')
     resolve(msg)
   })
 }
